@@ -1,27 +1,26 @@
 :root {
   --primary-color: #FFD500;
   --primary-hover: #f7c600;
-  --text-dark: #222;
-  --text-muted: #777;
-  --card-bg: #ffffff;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-  --radius: 20px;
-  --gradient-start: #fffce1;
-  --gradient-end: #ffe680;
+  --text-dark: #111;
+  --text-muted: #666;
+  --card-bg: #fff;
   --accent-dark: #1e1e1e;
+  --gray-bg: #f7f7f9;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --radius: 18px;
 }
 
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
-  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  background: linear-gradient(to bottom right, #fffdf1, #ffe36e);
   color: var(--text-dark);
 }
 
 header {
   padding: 2rem 1rem;
-  background: #fff;
-  border-bottom: 1px solid #eee;
+  background: white;
+  border-bottom: 2px solid var(--primary-color);
   text-align: center;
 }
 
@@ -35,7 +34,7 @@ header h1 {
 header p {
   margin-top: 0.5rem;
   color: var(--text-muted);
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 
 main {
@@ -55,6 +54,22 @@ main {
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 0.6s ease forwards;
+  border-left: 6px solid transparent;
+}
+
+.card-yellow {
+  background: #fffdf4;
+  border-left: 6px solid var(--primary-color);
+}
+
+.card-gray {
+  background: var(--gray-bg);
+  border-left: 6px solid #ccc;
+}
+
+.card-white {
+  background: #ffffff;
+  border-left: 6px solid #222;
 }
 
 .card:nth-child(1) { animation-delay: 0.2s; }
@@ -81,7 +96,7 @@ ul, ol {
 
 li {
   margin-bottom: 0.7rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .buttons {
@@ -92,33 +107,33 @@ li {
   display: inline-block;
   background: var(--primary-color);
   color: #000;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
-  padding: 0.85rem 1.7rem;
+  padding: 1rem 2rem;
   border-radius: 12px;
   text-decoration: none;
-  font-size: 1rem;
-  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  border: 2px solid #00000022;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
   background: var(--primary-hover);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+  padding: 1.5rem 1rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
   background: #fff;
-  border-top: 1px solid #eee;
+  border-top: 2px solid var(--primary-color);
 }
 
 @media (max-width: 768px) {
-  body {
-    background-size: auto;
-  }
   .btn {
     width: 100%;
   }
