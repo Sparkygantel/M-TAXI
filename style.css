@@ -1,24 +1,26 @@
 :root {
   --primary-color: #FFD500;
-  --primary-hover: #e5c000;
-  --text-dark: #111;
-  --text-muted: #666;
+  --primary-hover: #f7c600;
+  --text-dark: #222;
+  --text-muted: #777;
   --card-bg: #ffffff;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --radius: 20px;
+  --gradient-start: #fffce1;
+  --gradient-end: #ffe680;
+  --accent-dark: #1e1e1e;
 }
 
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
-  background: url('/img/taxi-pattern.png') top left repeat, linear-gradient(to bottom right, #fefcea, #f1da36);
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
   color: var(--text-dark);
-  background-size: contain;
 }
 
 header {
   padding: 2rem 1rem;
-  background-color: white;
+  background: #fff;
   border-bottom: 1px solid #eee;
   text-align: center;
 }
@@ -27,7 +29,7 @@ header h1 {
   margin: 0;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #000;
+  color: var(--accent-dark);
 }
 
 header p {
@@ -38,7 +40,7 @@ header p {
 
 main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   padding: 2rem;
   max-width: 1200px;
@@ -68,7 +70,8 @@ main {
 
 h2 {
   margin-top: 0;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--accent-dark);
 }
 
 ul, ol {
@@ -81,16 +84,20 @@ li {
   line-height: 1.5;
 }
 
+.buttons {
+  margin-top: 1.5rem;
+}
+
 .btn {
   display: inline-block;
   background: var(--primary-color);
-  color: black;
+  color: #000;
   font-weight: 600;
   text-align: center;
-  padding: 0.75rem 1.5rem;
+  padding: 0.85rem 1.7rem;
   border-radius: 12px;
   text-decoration: none;
-  margin-top: 1.5rem;
+  font-size: 1rem;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
