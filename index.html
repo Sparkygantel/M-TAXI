@@ -4,107 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>M-Taxi | Яндекс.Такси</title>
+  <!-- Шрифт Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Внешний CSS -->
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Дополнительные стили для градиента, обводки и анимации -->
   <style>
-  body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    background: linear-gradient(to bottom right, #e0f0ff, #ffffff); /* 🌈 фон */
-    color: #111;
-  }
-
-  header {
-    padding: 2rem;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    text-align: center;
-  }
-
-  header h1 {
-    margin: 0;
-    font-size: 2rem;
-    color: #000; /* чёрный брендовый */
-  }
-
-  header p {
-    margin: 0.5rem 0 0;
-    color: #555;
-  }
-
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    padding: 2rem;
-  }
-
-  section.card {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    padding: 2rem;
-  }
-
-  h2 {
-    margin-top: 0;
-    color: #000;
-  }
-
-  ul, ol {
-    margin-left: 1.25rem;
-  }
-
-  li {
-    margin-bottom: 0.5rem;
-  }
-
-  .buttons {
-    margin-top: 1.5rem;
-  }
-
-  .btn {
-    display: inline-block;
-    margin-right: 1rem;
-    padding: 0.75rem 1.5rem;
-    background-color: #FFD500; /* 💛 Яндекс.Такси жёлтый */
-    color: black;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: background 0.3s, transform 0.2s;
-  }
-
-  .btn:hover {
-    background-color: #e5c000;
-    transform: translateY(-2px);
-  }
-
-  .contact p {
-    margin: 0.5rem 0;
-  }
-
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #fff;
-    border-top: 1px solid #eee;
-    font-size: 0.875rem;
-    color: #777;
-  }
-
-  @media (max-width: 768px) {
-    main {
-      grid-template-columns: 1fr;
+    body {
+      /* Градиентный фон */
+      background: linear-gradient(to bottom right, var(--background-gradient-start), var(--background-gradient-end));
     }
 
-    .btn {
-      display: block;
-      margin: 1rem 0;
+    section.card {
+      /* Цветная обводка слева */
+      border-left: 6px solid var(--primary-color);
+      /* Скрываем и поднимаем для анимации */
+      opacity: 0;
+      transform: translateY(20px);
+      /* Плавная анимация появления */
+      animation: fadeInUp 0.6s ease forwards;
     }
-  }
-</style>
 
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -128,10 +56,10 @@
     <section class="card">
       <h2>Как начать?</h2>
       <ol>
-        <li> 1. Напишите нам в Telegram или позвоните</li>
-        <li> 2. Отправьте документы</li>
-        <li> 3. Пройдите быструю проверку</li>
-        <li> 4. Встаньте на линию и начинайте зарабатывать</li>
+        <li>1. Напишите нам в Telegram или позвоните</li>
+        <li>2. Отправьте документы</li>
+        <li>3. Пройдите быструю проверку</li>
+        <li>4. Встаньте на линию и начинайте зарабатывать</li>
       </ol>
     </section>
     <section class="card contact">
