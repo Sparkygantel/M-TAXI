@@ -4,41 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>M-Taxi | Яндекс.Такси</title>
-  <!-- Шрифт Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <!-- Внешний CSS -->
-  <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Дополнительные стили для градиента, обводки и анимации -->
-  <style>
-    body {
-      /* Градиентный фон */
-      background: linear-gradient(to bottom right, var(--background-gradient-start), var(--background-gradient-end));
-    }
-
-    section.card {
-      /* Цветная обводка слева */
-      border-left: 6px solid var(--primary-color);
-      /* Скрываем и поднимаем для анимации */
-      opacity: 0;
-      transform: translateY(20px);
-      /* Плавная анимация появления */
-      animation: fadeInUp 0.6s ease forwards;
-    }
-
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>M-Taxi</h1>
     <p>Работа в Яндекс.Такси | Комиссия 2% | Выплаты 24/7</p>
   </header>
+
   <main>
     <section class="card">
       <h2>Преимущества работы с нами</h2>
@@ -49,10 +23,9 @@
         <li>✅ Быстрое подключение — без визита в офис</li>
         <li>✅ Получение лицензий без ИП</li>
       </ul>
-      <div class="buttons">
-        <a href="https://t.me/MTAXI_RU" class="btn">Подключиться в Telegram</a>
-      </div>
+      <a href="https://t.me/MTAXI_RU" class="btn">Подключиться в Telegram</a>
     </section>
+
     <section class="card">
       <h2>Как начать?</h2>
       <ol>
@@ -62,13 +35,16 @@
         <li>4. Встаньте на линию и начинайте зарабатывать</li>
       </ol>
     </section>
+
     <section class="card contact">
       <h2>Контакты</h2>
       <p>Telegram: <a href="https://t.me/MTAXI_RU">@MTAXI_RU</a></p>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2025 M-Taxi | Работаем с Яндекс.Такси</p>
   </footer>
 </body>
 </html>
+
