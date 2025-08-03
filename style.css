@@ -1,11 +1,11 @@
 :root {
-  --primary-color: #FFD500;
-  --primary-hover: #f7c600;
+  --primary-color: #EAB308; /* тёмно-жёлтый */
+  --primary-hover: #d9a100;
   --text-dark: #111;
   --text-muted: #666;
   --card-bg: #fff;
-  --accent-dark: #1e1e1e;
-  --gray-bg: #f7f7f9;
+  --accent-dark: #1a1a1a;
+  --gray-bg: #f0f0f3;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   --radius: 18px;
 }
@@ -13,7 +13,7 @@
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
-  background: linear-gradient(to bottom right, #fffdf1, #ffe36e);
+  background: linear-gradient(135deg, #fff9db, #ffe066);
   color: var(--text-dark);
 }
 
@@ -58,7 +58,7 @@ main {
 }
 
 .card-yellow {
-  background: #fffdf4;
+  background: #fff8d6;
   border-left: 6px solid var(--primary-color);
 }
 
