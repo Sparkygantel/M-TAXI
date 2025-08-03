@@ -1,26 +1,26 @@
+/* === Тёмно-жёлтая тёплая палитра для M-Taxi === */
 :root {
-  --primary-color: #EAB308; /* тёмно-жёлтый */
-  --primary-hover: #d9a100;
-  --text-dark: #111;
-  --text-muted: #666;
-  --card-bg: #fff;
-  --accent-dark: #1a1a1a;
-  --gray-bg: #f0f0f3;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --primary-color: #c89100; /* глубокий янтарный */
+  --primary-hover: #b17d00;
+  --text-dark: #f8f8f8;
+  --text-muted: #cfcfcf;
+  --card-bg: #1a1a1a;
+  --accent-dark: #ffffff;
+  --gray-bg: #2a2a2a;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   --radius: 18px;
 }
 
-/* ТЁМНО-ЖЁЛТЫЙ ГРАДИЕНТ */
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
-  background: linear-gradient(135deg, #f6c700, #e4af00 60%, #c99800);
+  background: linear-gradient(135deg, #3a2f00, #7d5e00);
   color: var(--text-dark);
 }
 
 header {
   padding: 2rem 1rem;
-  background: white;
+  background: #111;
   border-bottom: 2px solid var(--primary-color);
   text-align: center;
 }
@@ -29,7 +29,7 @@ header h1 {
   margin: 0;
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--accent-dark);
+  color: var(--primary-color);
 }
 
 header p {
@@ -59,18 +59,18 @@ main {
 }
 
 .card-yellow {
-  background: #fff8d6;
+  background: #2a1f00;
   border-left: 6px solid var(--primary-color);
 }
 
 .card-gray {
   background: var(--gray-bg);
-  border-left: 6px solid #ccc;
+  border-left: 6px solid #888;
 }
 
 .card-white {
-  background: #ffffff;
-  border-left: 6px solid #222;
+  background: #202020;
+  border-left: 6px solid var(--primary-color);
 }
 
 .card:nth-child(1) { animation-delay: 0.2s; }
@@ -102,6 +102,7 @@ li {
 
 .buttons {
   margin-top: 1.5rem;
+  text-align: center;
 }
 
 .btn {
@@ -114,15 +115,15 @@ li {
   border-radius: 12px;
   text-decoration: none;
   font-size: 1.1rem;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
-  border: 2px solid #00000022;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  border: none;
   transition: all 0.3s ease;
 }
 
 .btn:hover {
   background: var(--primary-hover);
   transform: translateY(-3px);
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 footer {
@@ -130,7 +131,7 @@ footer {
   padding: 1.5rem 1rem;
   font-size: 0.95rem;
   color: var(--text-muted);
-  background: #fff;
+  background: #111;
   border-top: 2px solid var(--primary-color);
 }
 
