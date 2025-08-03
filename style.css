@@ -10,10 +10,11 @@
   --radius: 18px;
 }
 
+/* ТЁМНО-ЖЁЛТЫЙ ГРАДИЕНТ */
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
-  background: linear-gradient(135deg, #fff9db, #ffe066);
+  background: linear-gradient(135deg, #f6c700, #e4af00 60%, #c99800);
   color: var(--text-dark);
 }
 
