@@ -139,4 +139,26 @@ footer {
   .btn {
     width: 100%;
   }
+  .putevoy-list {
+  text-align: center;
+}
+
+.putevoy-list p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.putevoy-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.putevoy-image:hover {
+  transform: scale(1.03);
+} 
+
 }
